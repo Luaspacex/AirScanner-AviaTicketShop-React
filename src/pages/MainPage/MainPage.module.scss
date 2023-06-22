@@ -1,0 +1,325 @@
+
+.wrapper{
+    background-color: hsla(211, 85%, 13%, 1);
+    max-width: 1920px;
+    min-height: 285px;
+    padding-top: 1.5rem;
+}
+
+.headerInner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.companyLogo{
+    width: 173px;
+    height: 42px;
+}
+
+.authBlock{
+    display: flex;
+}
+
+.userLogin{
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+
+.loginText{
+    align-self: center;
+    color: white;
+    padding: 13px;
+}
+
+.burgerMenu{
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+
+.flightSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.introText{
+    text-align: justify; 
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 40px 0 24px 0;
+}
+
+.flightSection input{
+height: 72px;
+padding: 16px 22px;
+background-color: #ffffff;
+margin: 5px;
+}
+
+input::placeholder{
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+
+.fromText, .toText, .departText, .returnText, .cabinText{
+    position: absolute;
+    top: 12px;
+    margin-left: 27px;
+    // margin: 12px 30px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #545860;
+    font-weight: 700;
+}
+.best{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.fromLocation{
+    border-radius: 0.75rem 0 0 0.75rem;
+    &:hover{
+        border:2px solid rgb(43, 120, 244);
+    }
+}
+
+.cabinClass{
+    border-radius: 0 0.75rem 0.75rem 0;
+    &:hover{
+        border:2px solid rgb(43, 120, 244);
+    }
+}
+
+.toDestination, .departDate, .currency{
+    &:hover{
+        border:2px solid rgb(43, 120, 244);
+    }
+}
+.searchButton{
+    width: 84.33px;
+    height: 72px;
+    align-self: center;
+    background: rgb(43, 120, 244);
+    border-radius: 12px;
+    color: white;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+.checkboxBlock{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 28.4rem;
+    margin-top: 14px;
+    gap: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+.ticketView{
+    background-color: white;
+    min-width: 100px;
+    min-height: 150px;
+}
+.textBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 30px 0;
+}
+.slogan{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.description{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.bannerImage{
+    width: 900px;
+}
+.fig {
+    position: relative;
+
+  }
+  
+.figcaption {
+    position: absolute;
+    top: 38%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+  }
+  .bannerWords{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .bannerSecWords{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .bannerButton{
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 15px;
+
+  }
+
+  .buttonPros{
+    padding: 15px;
+    background-color:  hsla(211, 85%, 13%, 1);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px;
+    border-radius: 10px;
+    width: 200px;
+    align-self: center;
+  }
+  .buttonProsText{
+    text-align: center;
+    align-self: center;
+  }
+  .logOut{
+    width: 70px;
+    height: 25px;
+    align-self: center;
+    font-weight: 700;
+    border-radius: 20px;
+  }
+  .tickets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .logoFly{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+  }
+// CSS of not relizated function
+// input:nth-child(3n){
+//     border-radius: 0.75rem 0 0 0.75rem;
+// }
+// input:nth-child(1){
+//     border-radius: 0 0.75rem 0.75rem 0;
+// }
+
+// .flightSection{
+//     position: relative;
+// }
+// .flightSection label{
+//     position: absolute;
+//     transform: translate(0, 26px) scale(1);
+// }
+// .flightSection label{
+//     transform-origin: top left;
+//     transition: all 0.2s ease-out;
+// }
+
+// .flightSection:focus-within label{
+//     transform: translate(0, 12px) scale(0.75);   
+// }
+
+// .flightSection .Active{
+//     transform: translate(0, 12px) scale(0.75);
+// }
+
+
+// .floatLabel, .floatLabelSecond {
+//     display: flex;
+//     // justify-content: space-evenly;
+//     min-width: 350px;
+//   gap: 10px;
+
+//   }
+
+//   .floatLabel #from {
+//     font-size: 16px;
+//     font-family: Arial, Helvetica, sans-serif;
+//     padding: 0 12px;
+//     color: #999;
+//     pointer-events: none;
+//   }
+
+//   .floatLabel {
+//     position: relative;
+//   }
+
+//   .floatLabel #from {
+//     position: absolute;
+//     transform: translate(0, 26px) scale(1);
+//   }
+
+//   .floatLabel #from {
+//     transform-origin: top left;
+//     transition: all 0.2s ease-out;
+//   }
+  
+//   .floatLabel:focus-within #from {
+//     transform: translate(0, 12px) scale(0.75);
+//   }
+//   .floatLabel .Active {
+//     transform: translate(0, 12px) scale(0.75);
+//   }
+
+
+  
+//   .floatLabelSecond #to {
+//     font-size: 16px;
+//     font-family: Arial, Helvetica, sans-serif;
+//     padding: 0 12px;
+//     color: #999;
+//     pointer-events: none;
+//   } 
+//   .floatLabelSecond {
+//     position: relative;
+//   }
+//   .floatLabelSecond #to {
+//     position: absolute;
+//     transform: translate(0, 26px) scale(1);
+//   }
+
+//   .floatLabelSecond #to {
+//     transform-origin: top left;
+//     transition: all 0.2s ease-out;
+//   }
+  
+//   .floatLabelSecond:focus-within #to {
+//     transform: translate(0, 12px) scale(0.75);
+//   }
+//   .floatLabelSecond .ActiveSecond {
+//     transform: translate(0, 12px) scale(0.75);
+//   }

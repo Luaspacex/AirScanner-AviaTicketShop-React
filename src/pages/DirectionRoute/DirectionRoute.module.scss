@@ -1,0 +1,134 @@
+// .flightSection{
+//     display: none;
+//     visibility: hidden;
+// }
+.wrapper{
+display: flex;
+justify-content: center;
+}
+.directionNameBlock{
+    display: grid;
+    grid-template-columns: minmax(220px, 220px) auto minmax(200px, 200px);
+    background-color: hsla(211, 85%, 13%, 1);
+    color: white;
+    // margin: 0px 300px 0 300px;
+    border-radius: 10px;
+    height: 85px;
+    width: 51.5%;
+    padding-top: 9px;
+}
+.findIcon{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    align-self: center;
+    align-self: center;
+    // margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.directionCity{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: -120px;
+}
+.date{
+    margin-top: 10px;
+    margin-left: 100px;
+    // margin-left: 1050px;
+}
+.status{
+    margin-left: 100px;
+    margin-top: -20px;
+    // margin-left: -1265px;
+}
+.statusTicketBoxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+        align-self: center;
+}
+.bestFlight, .fastFlight,.cheapFlight, .directFlight {
+    width: 180px;
+    padding: 15px;
+    border: 1px gray solid;
+    border-radius: 10px;
+    // margin-top: 10px;
+    text-align: center;
+}
+.bestFlight{
+    margin-top: 10px;
+}
+
+.ticketText{
+    color: rgb(97, 97, 97);
+    font-weight: 400;
+    // margin-bottom: 5px;
+    text-align: center;
+}
+.priceBox{
+    color: blue;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.durationBox{
+    color: gray;
+    font-weight: 400;
+}
+.airAstanaLogo{
+    width: 45px;
+    height: 45px;
+    align-self: center;
+    // margin: 15px;
+}
+.ticketsBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ticket{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    width: 650px;
+    border-radius: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    margin: 10px 0;
+}
+.departure, .stops,.arrival {
+    margin: 0px 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.oneStop{
+   width: 40px;
+    height: 40px;
+    align-self: center;
+}
+.price{
+    align-self: center;
+}
+.selectButtons{
+        align-self: center;
+ margin: 25px;
+width: 120px;
+height: 25px;
+}
+.imageLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin: 15px;
+}
+.imageInnerText{
+    text-align: center;
+}
+// .departureTime{
+//     // margin: 10px;
+//     padding-left: 20px;
+// }

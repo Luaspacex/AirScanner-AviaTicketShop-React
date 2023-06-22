@@ -1,0 +1,56 @@
+
+
+.wrapper{
+    background-color: white;
+    max-width: 1920px;
+    min-height: 85px;
+    padding-top: 1.5rem;
+    color: black;
+}
+
+.headerInner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.companyLogo{
+    width: 200px;
+    height: 100px;
+    // background-color: blue;
+}
+
+.authBlock{
+    display: flex;
+}
+
+.userLogin{
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+
+.loginText{
+    align-self: center;
+    // color: white;
+    padding: 13px;
+    font-weight: 600;
+    background-color: rgb(181, 179, 179);
+    border-radius:15px;
+}
+
+.burgerMenu{
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+
+.logOut{
+    width: 70px;
+    height:35px;
+    align-self: center;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+  }

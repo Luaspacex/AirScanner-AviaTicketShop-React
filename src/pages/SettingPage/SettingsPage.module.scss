@@ -1,0 +1,58 @@
+// .wrapper {
+//     background-color: #363755;
+//     // width: 100vw;
+//     // height: 100vh;
+//     // display: flex;
+//     // flex-direction: row;
+//     align-items: center;
+//     align-content: center;
+//     // justify-content: space-between;
+//   }
+//   // .settings_block {
+//   //   background-color: #ffffff;
+//   //   max-width: 600px;
+//   //   min-height: 610px;
+//   //   width: 100%;
+//   //   border-radius: 45px;
+//   //   padding-top: 40px;
+//   //   position: relative;
+//   // }
+//   .settings_main{
+//     background-color: #edeeef;
+//     max-width: 585px;
+//     min-height: 710px;
+//     border-radius: 45px;
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     margin: 0 auto;
+//     // position: relative;
+//     gap: 15px;
+//     align-items: center;
+//     // margin-top: 30px;
+//     // padding: 0 5px;
+//     width: 100%;
+//     border-radius: 45px;
+//   }
+//   .saveButton{
+//  max-width: 150px;
+//  max-height: 40px;
+//  margin: 0 auto;
+ 
+//   }
+//   .logOut{
+//     max-width: 150px;
+//     max-height: 40px;
+//     margin: 0 auto;
+
+//   }
+//   .email, .avatar, .description, .name{
+//     min-width: 353px;
+//     min-height: 56px;
+//     border-radius: 10px;
+//     &::placeholder{
+//       padding-left: 10px;
+//       color: black;
+//       font-weight: 400;
+//     }
+//   }

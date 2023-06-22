@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "Anime",
+      "password": "qwerty",
+      "image": "https://attackofthefanboy.com/wp-content/uploads/2023/02/Mikasa.jpg"
+    },
+    {
+      "login": "Irvin",
+      "password": "12345",
+      "image": "https://attackofthefanboy.com/wp-content/uploads/2023/02/Mikasa.jpg",
+      "id": 2
+    },
+    {
+      "login": "Anya",
+      "password": "12345",
+      "image": "https://attackofthefanboy.com/wp-content/uploads/2023/02/Mikasa.jpg",
+      "id": 3
+    },
+    {
+      "login": "Mikasa",
+      "password": "12345",
+      "image": "https://attackofthefanboy.com/wp-content/uploads/2023/02/Mikasa.jpg",
+      "id": 4
+    },
+    {
+      "login": "Sakura",
+      "password": "12345",
+      "image": "https://attackofthefanboy.com/wp-content/uploads/2023/02/Mikasa.jpg",
+      "id": 5
+    },
+    {
+      "login": "Misa",
+      "password": "dssdsd",
+      "image": "https://attackofthefanboy.com/wp-content/uploads/2023/02/Mikasa.jpg",
+      "id": 6
+    },
+    {
+      "login": "luaspacex",
+      "password": "qwerty",
+      "id": 7
+    },
+    {
+      "login": "luaspacex",
+      "password": "qwerty",
+      "id": 8
+    }
+  ]
+} 

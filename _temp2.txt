@@ -1,0 +1,61 @@
+
+//  Function not realizated
+// const [isActive, setIsActive] = useState(false);
+// const [isActiveSecond, setIsActiveSecond] = useState(false);
+// const [value, setValue] = useState('');
+// const [valueSecond, setValueSecond] = useState('');
+// function handleTextChange(text) {
+//     setValue(text);
+
+//     if (text !== '') {
+//       setIsActive(true);
+//     } else {
+//       setIsActive(false);
+//     }
+//   }
+//   function handleTextSecondChange(email) {
+//     setValueSecond(email);
+//     if (email !== '') {
+//       setIsActiveSecond(true);
+//     } else {
+//       setIsActiveSecond(false);
+//     }
+//   }
+
+// Test
+{
+  /* <div className={s.floatLabel}>
+        <input
+        type="email" 
+        value={value}
+        onChange={(e) => handleTextChange(e.target.value)}
+        />
+        <label htmlFor="email" className={ isActive ? "Active" : ""} >
+            E-mail
+        </label>
+        </div> */
+}
+
+// Practise Test
+// {/* <div className={s.floatLabel}>
+//     <input type="text" value={value}
+//     //   className={s.fromLocation}
+//     //   placeholder="Los Angeles"
+//       onChange={(e) => handleTextChange(e.target.value)} className={s.fromInput}
+//     />
+//     <label htmlFor="text" className={ isActive ? "Active" : ""} id={s.from}>From</label> */}
+
+//     {/* <input type="text" value={value}
+//     //   className={s.fromLocation}
+//     //   placeholder="Los Angeles"
+//       onChange={(e) => handleTextChange(e.target.value)}
+//     />
+//     <label htmlFor="text" className={ isActive ? "Active" : ""} id={s.to}>To</label> */}
+// {/* </div>
+// <div className={s.floatLabelSecond}>
+//     <input type="email" value={valueSecond}
+//     //   className={s.fromLocation}
+//     //   placeholder="Los Angeles"
+//       onChange={(e) => handleTextSecondChange(e.target.valueSecond)} className={s.toInput}
+//     />
+//     <label htmlFor="email" className={ isActiveSecond ? "ActiveSecond" : ""} id={s.to}>To</label> */
