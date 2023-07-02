@@ -1,0 +1,242 @@
+.passengerForm{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+}
+.main{
+    // margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+.info{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+.name_group, .surname_group, .email_group, .phone_group, .birthday_group, .passport_group{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 8px 0;
+}
+.name, .surname, .email, .phone, .birthday, .passport{
+ width: 60%;
+ height: 30px;
+ border-radius: 5px;
+ border: 1px black solid;
+}
+input{
+   margin: 0 auto;
+}
+.submit{
+    width: 100px;
+    height: 45px;
+    margin-top: 10px;
+}
+label{
+    font-weight: 600;
+    margin: 2px 0;
+}
+
+.priceBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.priceTotal{
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.priceCurrency{
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
+}
+.checkOutButton{
+    width: 151px;
+    height: 55px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #42B8FF;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 230px;
+
+}
+.buttonBlock{
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.cardBlock{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 200px 0;
+    
+}
+.card{
+    width: 608px;
+    height: 363px;
+}
+
+.fig {
+    position: relative;
+
+  }
+
+.figcaption {
+    position: absolute;
+    // top: 50%;
+    // left: 37%;
+    transform: translate(-50%, -50%);
+    
+  }
+  input{
+
+    margin-bottom: 5px;
+  }
+.valid{
+    position: absolute;
+    top: 46%;
+    left: 40px;
+    // margin-right: 284px;
+}
+
+.imageCard{
+    margin-top: 10px;
+    width: 464px;
+    height: 45px;
+}
+
+.numberCard{
+    position: absolute;
+    top: 33%;
+    left: 40px;
+    width: 61%;
+    min-height: 40px;
+    border-radius: 2px;
+    border-color: #d8dadc;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    line-height: 125%;
+    border: 1px solid hsla(210, 5%, 85%, 1);
+    transition: 0.3s;
+    // margin-bottom: 20px;
+}
+.holder{
+    position: absolute;
+    top: 20%;
+    left: 40px;
+    width: 61%;
+    min-height: 40px;
+    border-radius: 2px;
+    border-color: #d8dadc;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    line-height: 125%;
+    border: 1px solid hsla(210, 5%, 85%, 1);
+    transition: 0.3s;
+}
+.month{
+    position: absolute;
+    top: 52%;
+    left: 40px;
+    width: 21%;
+    min-height: 40px;
+    border-radius: 2px;
+    border-color: #d8dadc;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    line-height: 125%;
+    border: 1px solid hsla(210, 5%, 85%, 1);
+    transition: 0.3s;
+   
+}
+.year{
+    width: 42%;
+    min-height: 36px;
+    border-radius: 2px;
+    border-color: #d8dadc;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    line-height: 125%;
+    border: 1px solid hsla(210, 5%, 85%, 1);
+    transition: 0.3s;
+    align-self: center;
+}
+.payMethod{
+    position: absolute;
+    top: 52%;
+    left: 45%;
+    width: 138px;
+    height: 59px;
+    align-self: center;
+    align-items: center;
+    margin-top: -10px;
+
+    // margin-right: 245px;
+}
+.cvc{
+    position: absolute;
+    top: 63%;
+    left: 77%;
+    width: 20%;
+    min-height: 40px;
+    border-radius: 2px;
+    border-color: #d8dadc;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    line-height: 125%;
+    border: 1px solid hsla(210, 5%, 85%, 1);
+    transition: 0.3s;
+    text-align: center;
+    // margin-left: 119%;
+}
+
+.luhnCheck{
+    color: red;
+}
+//  <div className={s.logoContainer}>
+// <figure className={s.fig}>
+// <img src={logoBlock} alt="" className={s.image} />
+// <figcaption className={s.figcaption}>
+// <h2 className={s.bannerWords}>
+// The Air Scanner Makes <br></br> Travel Planning Easy {" "}
+// </h2>
+// <p className={s.bannerSecWords}>
+// We’ll get you where you want to go. From live train updates to<br></br>{" "}
+// mobile tickets, our innovative app is the ideal way to plan and <br></br>{" "}
+// keep track of your travel. 
+// </p>
+// <img src={app} alt="" className={s.imageCard} />
+// <img src={phoneApp} alt="" className={s.phoneApp}/>
+// </figcaption>
+// </figure>
+// </div>

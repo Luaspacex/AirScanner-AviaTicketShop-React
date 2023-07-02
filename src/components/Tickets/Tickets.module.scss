@@ -1,0 +1,63 @@
+    .ticket{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100px;
+        width: 650px;
+        border-radius: 10px;
+        border: 1px solid rgb(180, 180, 180);
+        margin: 10px 0;
+    }
+
+    .imageLogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        margin: 15px;
+    }
+
+    .airplaneLogo{
+        width: 45px;
+        height: 45px;
+        align-self: center;
+    }
+
+    .logoUrl, .marketingCarrier{
+        align-self: center;
+        text-align: center;
+        color: #555A61;
+        font-size: 17px;
+    }
+
+    .departure, .stops, .arrival {
+        margin: 0px 20px;
+        align-self: center;
+        text-align: center;
+        color: #555A61;
+    }
+
+    .departureTime, .arrivalTime, .destination, .origin  {
+        font-size: 17px;
+    }
+    
+    .oneStop{
+       width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+    
+    .price{
+        align-self: center;
+        color: #555A61;
+        font-size: 18px;
+    }
+
+    .selectButtons{
+        align-self: center;
+        margin: 25px;
+        width: 120px;
+        height: 25px;
+        background-color: #42B8FF;
+        font-weight: 24px;
+    }

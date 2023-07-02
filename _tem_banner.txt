@@ -1,0 +1,57 @@
+      {/* <div className={s.banner}>
+        <figure className={s.fig}>
+          <img src={banner} alt="banner" className={s.bannerImage} />
+          <figcaption className={s.figcaption}>
+            <h2 className={s.bannerWords}>
+              Plan the ultimate <br></br> summer trip!{" "}
+            </h2>
+            <p className={s.bannerSecWords}>
+              Find destination inspiration, tips and money-saving <br></br>{" "}
+              hacks.
+            </p>
+            <button className={s.bannerButton}>Show me the sun</button>
+          </figcaption>
+        </figure>
+      </div> */}
+
+
+      .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.bannerImage{
+    width: 900px;
+}
+.fig {
+    position: relative;
+
+  }
+  
+.figcaption {
+    position: absolute;
+    top: 38%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+  }
+  .bannerWords{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .bannerSecWords{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .bannerButton{
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+  }

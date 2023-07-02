@@ -1,10 +1,9 @@
 .wrapper{
-    margin-top: 50px;
     height: 295px;
     width: 100%;
-    background-color: hsla(211, 85%, 13%, 1);
-
+    background-color: #185FB1;
 }
+
 .blockName{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -12,11 +11,13 @@
     gap: 40px 90px;
     padding-top: 60px;
 }
+
 .list{
     color: white;
     font-weight: 500;
     font-size: 16px;
 }
+
 .text{
     display: flex;
     flex-direction: column;

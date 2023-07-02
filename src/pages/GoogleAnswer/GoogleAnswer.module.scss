@@ -1,0 +1,122 @@
+.shortInformation{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.innerDiv{
+    max-width: 35%;
+    margin: 0 auto;
+}
+.title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.event{
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: white;
+}
+.eventName{
+    list-style-type:circle;
+    // font-weight: 600;
+}
+.imageBlock{
+    background-image: url(https://images.unsplash.com/photo-1498673394965-85cb14905c89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80); 
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+    border-radius: 20px;
+    
+}
+.imageBlockSecond{
+    background-image: url(https://cdn.pixabay.com/photo/2020/06/07/13/33/fireworks-5270439_1280.jpg); 
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    min-height: 150px;
+
+}
+.imageBlockThird{
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1280.jpg); 
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+       min-height: 150px;
+    // color: white;
+}
+.grid{
+     display: grid;
+    grid-template-columns: 230px 230px 230px;
+    gap: 10px;
+    //   margin-bottom: 15px;
+
+}
+
+.linkButton{
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.sights{
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-align: center;
+}
+.gridBlock{
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+    gap: 10px;
+      margin-bottom: 15px;
+}
+.sightsName{
+     list-style-type:circle;
+     font-weight: 600;
+}
+.price{
+    font-weight: 600;
+}
+.guide{
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 25px 15px;
+    text-align: center;
+    min-height: 120px;
+    background-color: #42B8FF;
+
+}
+.linkButtonGuide{
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.question{
+    font-weight: 600;
+    line-height: 30px;
+}
+.imagePosition{
+   width: 250px;
+   height: 150px;
+}
+.answer{
+    list-style-type:square;
+}

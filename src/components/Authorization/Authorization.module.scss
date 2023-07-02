@@ -1,10 +1,8 @@
-
 .email_address {
   max-width: 360px;
   min-height: 350px;
   display: flex;
   flex-direction: column;
-  /* gap: 15px; */
   margin: 0 auto;
   margin-top: 50px;
   width: 100%;
@@ -14,4 +12,20 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.authButton{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 104px;
+  height: 49px;
+  color: black;
+  font-size: 19px;
+  border-radius: 10px;
+  margin-top: 30px;
+  align-self: center;
+}
+.icon{
+  position: absolute;
+  left: 73%;
+  top: 52%;
 }

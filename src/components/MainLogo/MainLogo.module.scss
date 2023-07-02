@@ -1,0 +1,47 @@
+.logoContainer{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.fig {
+    position: relative;
+    width: 100%;
+  }
+
+  .image{
+    width: 100%;
+    height: 490px;
+  }
+  
+.figcaption {
+    position: absolute;
+    top: 38%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bannerWords{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .bannerSecWords{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+
+.imageCard{
+    margin-top: 10px;
+    width: 464px;
+    height: 45px;
+}
+
+.phoneApp{
+    position: absolute;
+    top: 73px;
+}

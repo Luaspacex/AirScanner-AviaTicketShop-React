@@ -1,10 +1,8 @@
-
-
 .wrapper{
     background-color: white;
-    max-width: 1920px;
-    min-height: 85px;
-    padding-top: 1.5rem;
+    max-width: 100%;
+    min-height: 142px;
+    box-shadow: 0px 1px 3px #ECEFF0;
     color: black;
 }
 
@@ -15,9 +13,8 @@
 }
 
 .companyLogo{
-    width: 200px;
-    height: 100px;
-    // background-color: blue;
+    width: 182px;
+    height: 129px;
 }
 
 .authBlock{
@@ -28,29 +25,42 @@
     width: 24px;
     height: 24px;
     align-self: center;
+    margin-right: 2px;
 }
 
-.loginText{
+.account{
     align-self: center;
-    // color: white;
-    padding: 13px;
-    font-weight: 600;
-    background-color: rgb(181, 179, 179);
-    border-radius:15px;
+    color: #42B8FF;
+    margin: 10px;
+}
+
+.cartBlock{
+    background-color: white;
+    height: 60px;
+    align-self: center;
+    margin-right: 2px;
+    margin-top: 34px;
+}
+
+.cart{
+    width: 45px;
+    height: 45px;
+    margin-right: 2px;
 }
 
 .burgerMenu{
     width: 24px;
     height: 24px;
     align-self: center;
+    margin-left: 9px;
 }
 
-.logOut{
-    width: 70px;
-    height:35px;
-    align-self: center;
-    font-weight: 700;
-    border-radius: 10px;
-    background-color: green;
-    color: white;
-  }
+// .logOut{
+//     width: 70px;
+//     height:35px;
+//     align-self: center;
+//     font-weight: 700;
+//     border-radius: 10px;
+//     background-color: green;
+//     color: white;
+//   }

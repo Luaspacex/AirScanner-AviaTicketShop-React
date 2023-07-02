@@ -1,16 +1,15 @@
 @import"~/src/styles/variables";
 
 .wrapper{
-    background-color:#363755;
+    background-color:#185FB1;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
-    align-content: center;
     justify-content: center;
 }
 .auth_block{
-    background-color: #FFFFFF;
+    background-image: url(../../images/clouds.png);
     max-width: 600px;
     min-height: 610px;
     width: 100%;
@@ -18,13 +17,7 @@
     padding-top: 40px;
     position: relative;
 }
-.star {
-    position: absolute;
-    top: 16px;
-    right: 40px;
-    width: 42px;
-    height: 38px;
-}
+
 .auth_register{
     background-color: #EDEEEF;
     max-width: 540px;
@@ -37,10 +30,10 @@
     // top: 40px;
     gap: 15px;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding: 0 5px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 28px;
 
 }
 .tab{
@@ -59,6 +52,8 @@
     font-size: 14px;
     font-weight: 700;
     letter-spacing: .5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 16px;
 }
 .tab.active{
     background-color: #FFFFFF;

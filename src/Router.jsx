@@ -5,7 +5,14 @@ import MainLayout from "./layout";
 import AuthorizationPage from "./pages/AuthorizationPage";
 import MainPage from "./pages/MainPage"
 import DirectionRoute from "./pages/DirectionRoute";
-import FormTicket from "./pages/FormTicket/FormTicket";
+import SelectTicket from "./pages/SelectTicket";
+import CheckOut from "./pages/CheckOut/CheckOut";
+import SightseeingPage from "./pages/SightseeingPage";
+import AboutCompany from "./pages/AboutCompany"
+import Contacts from "./pages/Contacts"
+import SuccessPage from "./pages/SuccessPage/SucsessPage";
+import ErrorPage from "./pages/ErrorPage"
+import GoogleAnswer from "./pages/GoogleAnswer"
 // import FeedPage from "./pages/FeedPage";
 // import PostPage from "./pages/PostPage/PostPage";
 // import PostCreator from "./pages/PostCreator/PostCreator"
@@ -35,6 +42,49 @@ function Router() {
           <Route path="/direction" element={<MainLayout />}>
             <Route index element={<DirectionRoute/>}  />
             {/* <Route path="/direction" index element={<DirectionRoute/>} /> */}
+          </Route>
+        )}
+           {user && (
+          <Route path="/passenger" element={<SelectTicket/>}>
+            <Route index element={<DirectionRoute/>}  />
+
+          </Route>
+        )}
+          {user && (
+          <Route path="/checkout" element={<CheckOut/>}>
+            <Route index element={<SelectTicket/>}  />
+          </Route>
+        )}
+
+      {user && (
+          <Route path="/success" element={<SuccessPage/>}>
+            <Route index element={<CheckOut/>}  />
+          </Route>
+        )}
+        {user && (
+          <Route path="/*" element={<MainPage/>}>
+            <Route index element={<SuccessPage/>}  />
+          </Route>
+        )}
+
+          {user && (
+          <Route path="/company" element={<AboutCompany/>}>
+            <Route index element={<MainPage/>}  />
+          </Route>
+        )}
+           {user && (
+          <Route path="/contacts" element={<Contacts/>}>
+            <Route index element={<MainPage/>}  />
+          </Route>
+        )}
+         {user && (
+          <Route path="/sightseeing" element={<SightseeingPage/>}>
+            <Route index element={<MainPage/>}  />
+          </Route>
+        )}
+           {user && (
+          <Route path="/result" element={<GoogleAnswer/>}>
+            <Route index element={<SightseeingPage/>}  />
           </Route>
         )}
        {/* {user && (

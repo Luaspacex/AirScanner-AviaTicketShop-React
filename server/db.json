@@ -45,6 +45,64 @@
       "login": "luaspacex",
       "password": "qwerty",
       "id": 8
+    },
+    {
+      "login": "adore.space@mail.ru",
+      "password": "Qwerty123*",
+      "id": 9
+    },
+    {
+      "login": "zookorea@inbox.ru",
+      "password": "Qwerty123*",
+      "id": 10
+    },
+    {
+      "login": "zookorea@inbox.ru",
+      "password": "Qwerty123*",
+      "contactNo": "7089153318",
+      "cart": [],
+      "id": 11
+    },
+    {
+      "login": "example@example.com",
+      "password": "Qwerty123*",
+      "contactNo": "7089153318",
+      "cart": [
+        "11876-2307120820--32179,-32166-1-14788-2307121350",
+        "9451-2309140635--32132-0-10413-2309140755"
+      ],
+      "id": 12
+    },
+    {
+      "login": "adore.space@mail.ru",
+      "password": "Almaty1701*",
+      "contactNo": "7089153318",
+      "cart": [],
+      "id": 13
+    },
+    {
+      "login": "adore.space@mail.ru",
+      "password": "Almaty1701*",
+      "contactNo": "7089153318",
+      "cart": [],
+      "id": 14
+    },
+    {
+      "login": "zookorea@inbox.ru",
+      "password": "Almaty1701*",
+      "contactNo": "7089153318",
+      "cart": [
+        "11876-2307121130--31731,-32698-1-11666-2307121455",
+        "11876-2307120820--32179,-32166-1-14788-2307121350"
+      ],
+      "id": 15
+    },
+    {
+      "login": "zookorea@inbox.ru",
+      "password": "Almaty1701*",
+      "contactNo": "7089153318",
+      "cart": [],
+      "id": 16
     }
   ]
-} 
+}
