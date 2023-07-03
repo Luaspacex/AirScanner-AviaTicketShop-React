@@ -1,4 +1,4 @@
-import React,{useState, useEffect,useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,32 +6,33 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
-import pay from "../../images/mastercard.png"
-import cards from "../../images/carts.png"
+import pay from "../../images/mastercard.png";
+import cards from "../../images/carts.png";
 import s from "./CheckOut.module.scss";
 
-
+const linkpoint = process.env.REACT_APP_ENDPOINT || "";
 function CheckOut() {
   const [isEmailSent, setIsEmailSent] = useState(false);
+  const [userLogin, setUserLogin] = useState("");
   const navigate = useNavigate();
   const [card, setCard] = useState({
-    cardno: '',
-    cardtype: 'far fa-credit-card',
-    expirydt: ''
+    cardno: "",
+    cardtype: "far fa-credit-card",
+    expirydt: "",
   });
 
   const onChange = (e) => {
     const inputValue = e.target.value;
     const formattedValue = inputValue
-      .replace(/[^0-9]/g, '') // Remove non-numeric characters
-      .slice(0, 16); // Limit input to 16 digits
+      .replace(/[^0-9]/g, "")
+      .slice(0, 16); 
 
     const isValidCard = isValidLuhn(formattedValue);
 
     setCard((prevCard) => ({
       ...prevCard,
       cardno: formattedValue,
-      isValid: isValidCard
+      isValid: isValidCard,
     }));
   };
 
@@ -57,7 +58,7 @@ function CheckOut() {
   };
 
   const cardnumber = (inputtxt) => {
-    const cardno = inputtxt.split(' - ').join('');
+    const cardno = inputtxt.split(" - ").join("");
     let cardtype1 = card.cardtype;
 
     const visa = /^(?:4[0-9]{2}?)$/;
@@ -66,77 +67,104 @@ function CheckOut() {
     const discovRegEx = /^(?:6(?:011|5[0-9][0-9])[0-9]{5})$/;
 
     if (visa.test(cardno)) {
-      cardtype1 = 'far fa fa-3x fa-cc-visa carddetail-cardtype';
+      cardtype1 = "far fa fa-3x fa-cc-visa carddetail-cardtype";
     } else if (mastercardRegEx.test(cardno)) {
-      cardtype1 = 'far fa fa-3x fa-cc-mastercard carddetail-cardtype';
+      cardtype1 = "far fa fa-3x fa-cc-mastercard carddetail-cardtype";
     } else if (amexpRegEx.test(cardno)) {
-      cardtype1 = 'far fa fa-3x fa-cc-amex carddetail-cardtype';
+      cardtype1 = "far fa fa-3x fa-cc-amex carddetail-cardtype";
     } else if (discovRegEx.test(cardno)) {
-      cardtype1 = 'far fa fa-3x fa-cc-discover carddetail-cardtype';
+      cardtype1 = "far fa fa-3x fa-cc-discover carddetail-cardtype";
     }
     return cardtype1;
   };
 
   const cc_format = (value) => {
-    const v = value.replace(/[^0-9]/gi, '').substr(0, 16);
+    const v = value.replace(/[^0-9]/gi, "").substr(0, 16);
     const parts = [];
     for (let i = 0; i < v.length; i += 4) {
       parts.push(v.substr(i, 4));
     }
-    return parts.length > 1 ? parts.join(' - ') : value;
+    return parts.length > 1 ? parts.join(" - ") : value;
   };
 
   const expriy_format = (value) => {
     const expdate = value;
     const expDateFormatter =
-      expdate.replace(/\//g, '').substring(0, 2) +
-      (expdate.length > 2 ? '/' : '') +
-      expdate.replace(/\//g, '').substring(2, 4);
+      expdate.replace(/\//g, "").substring(0, 2) +
+      (expdate.length > 2 ? "/" : "") +
+      expdate.replace(/\//g, "").substring(2, 4);
     return expDateFormatter;
   };
 
   const onChangeExp = (e) => {
     setCard((prevCard) => ({
       ...prevCard,
-      expirydt: e.target.value
+      expirydt: e.target.value,
     }));
   };
 
-    const form = useRef();
-  
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_it1i2ac', 'template_puq4f2s', form.current, "CVM2fcDflm-brY0Ia")
-        .then((result) => {
-            console.log(result.text);
-            setIsEmailSent(true);
-            setTimeout(() => {
-              // Navigate to "/success" path after a delay of 2 seconds
-              setIsEmailSent(false);
-              navigate("/success");
-            }, 1000); // 2000 milliseconds = 2 seconds
-        }, (error) => {
-            console.log(error.text);
-        });
+  let basketGet = localStorage.getItem("sample-data");
+  let getLogin = localStorage.getItem("userLogin");
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    let userEmail = localStorage.getItem("userEmail");
+    console.log(userEmail);
+    let sampleData = localStorage.getItem("sample-data");
+    let parsedData = JSON.parse(sampleData);
+    console.log(parsedData);
+    let total = 0;
+    for (const item of parsedData) {
+      var itemPrice = item.price;
+      var itemPrice = item.price.replaceAll(',','');
+      console.log(itemPrice);
+
+      let numPrice = parseInt(itemPrice.slice(2));
+      console.log(numPrice);
+      total += numPrice;
+      console.log(total);
+    }
+    const templateParams = {
+      subject: "Checkout Form",
+      message: "",
+      total: `${total}₸`,
+      to_email: `${userEmail}`,
     };
-    // const sendOrder = (email, subject, message, total) => {
-    //   const templateParams = {
-    //     subject: subject,
-    //     message: message,
-    //     total: total,
-    //     to_email: adore.space@mail,
-    //   };
-    // }
-  
+    let message = ``;
+    for (const item of parsedData) {
+      message += `\n ${item.origin} - ${item.destination}
+                   ${item.departure} - ${item.arrival} \n `;
+    }
+
+    templateParams.message = message;
+    emailjs
+      .send(
+        "service_it1i2ac",
+        "template_puq4f2s",
+        templateParams,
+        "CVM2fcDflm-brY0Ia"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsEmailSent(true);
+          setTimeout(() => {
+            setIsEmailSent(false);
+            navigate("/success");
+          }, 1000);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
       <Header />
-      <form
-        className={s.passengerForm}
-        ref={form} onSubmit={sendEmail}
-        // onSubmit={onPassengerForm}
-      >
+      <form className={s.passengerForm} ref={form} onSubmit={sendEmail}>
         <div className={s.main}>
           <h2 className={s.info}>Passenger information:</h2>
           <div className={s.name_group}>
@@ -180,48 +208,59 @@ function CheckOut() {
             />
           </div>
           <div className={s.cardBlock}>
-          <figure className={s.fig}>
-            <figcaption className={s.figcaption}>
-            <img src={cards} alt="card" className={s.card}/>
-                <input type="text" placeholder="Holder of card"
-                 className={s.holder} 
-                 />
-                <input type="text"  
-                data-mask="0000 0000 0000 0000"
-                placeholder="XXXX-XXXX-XXXX-XXXX"
-                value={cc_format(card.cardno)}
-                onChange={onChange}
-                className={s.numberCard}
-                />    {card.isValid !== undefined && !card.isValid && <p className={s.luhnCheck}>Please enter a valid card number.</p>}
-
+            <figure className={s.fig}>
+              <figcaption className={s.figcaption}>
+                <img src={cards} alt="card" className={s.card} />
+                <input
+                  type="text"
+                  placeholder="Holder of card"
+                  className={s.holder}
+                />
+                <input
+                  type="text"
+                  data-mask="0000 0000 0000 0000"
+                  placeholder="XXXX-XXXX-XXXX-XXXX"
+                  value={cc_format(card.cardno)}
+                  onChange={onChange}
+                  className={s.numberCard}
+                />{" "}
+                {card.isValid !== undefined && !card.isValid && (
+                  <p className={s.luhnCheck}>
+                    Please enter a valid card number.
+                  </p>
+                )}
                 <p className={s.valid}>VALID THRU</p>
-                <input type="text"
-                className={s.month}  
-                name="expiry-data"
-                placeholder="MM / YY"
-                onChange={onChangeExp}
-                value={expriy_format(card.expirydt)}
-/>
-
+                <input
+                  type="text"
+                  className={s.month}
+                  name="expiry-data"
+                  placeholder="MM / YY"
+                  onChange={onChangeExp}
+                  value={expriy_format(card.expirydt)}
+                />
                 <img src={pay} alt="pay_method" className={s.payMethod} />
-                <input type="password" name="cvc"  
+                <input
+                  type="password"
+                  name="cvc"
                   data-mask="000"
                   placeholder="000"
                   maxLength="3"
                   pattern="[0-9][0-9][0-9]"
-                className={s.cvc} 
+                  className={s.cvc}
                 />
-            </figcaption>
+              </figcaption>
             </figure>
           </div>
         </div>
 
         <div className={s.priceBox}>
-      <h2 className={s.priceTotal}>Total price:</h2>
-      <h2 className={s.priceCurrency}>1190$</h2>
-      </div>
+          <h2 className={s.priceTotal}>Total price:</h2>
+          <h2 className={s.priceCurrency}>1190$</h2>
+        </div>
         <div className={s.buttonBlock}>
-           <button className={s.checkOutButton} type="submit" value="Send" >Check out</button>
+          <button className={s.checkOutButton} type="submit" value="Send">
+            Check out
+          </button>
         </div>
       </form>
     </>

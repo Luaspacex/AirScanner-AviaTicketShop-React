@@ -9,12 +9,6 @@ function AuthorizationPage({ variant = "authorization" }) {
     <div className={s.wrapper}>
       <div className={s.auth_block}>
         <div className={s.auth_register}>
-          {/* <Link to="/" className={`${s.tab} ${variant === "authorization" ? s.active : ""}`}>
-            Sign up
-          </Link>
-          <Link to="/registration" className={`${s.tab} ${variant === "registration" ? s.active : ""}`}>
-            Register
-          </Link> */}
            <Link
             to="/authorization"
             className={`${s.tab} ${

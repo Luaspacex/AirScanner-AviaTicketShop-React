@@ -121,6 +121,7 @@ height: 25px;
     font-size: 24px;
 }
 .checkOutButton{
+    margin: 0 auto;
     width: 151px;
     height: 55px;
     border-radius: 5px;
@@ -129,14 +130,19 @@ height: 25px;
     color: white;
     font-size: 26px;
     font-weight: 600;
-    margin-top: 10px;
-    margin-left: 75px;
+    // margin-top: 10px;
+    align-self: center;
+    align-items: center;
+    
+    // margin-left: 75px;
 }
 .buttonBlock{
-    max-width: 800px;
-    display: flex;
-    flex-direction: row;
+    // max-width: 800px;
+    // display: flex;
+    // flex-direction: row;
+    align-self: center;
     margin: 0 auto;
+    max-width: 600px;
 }
 .space{
     height: 123px;
@@ -161,3 +167,18 @@ height: 25px;
 .plus{
     margin-right: 10px;
 }
+.wrapper{
+    max-width: 600px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    margin: 0 auto;
+}
+// .oneTicket{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     margin: 0 auto;
+//     align-items: center;
+//     align-self: center;
+// }

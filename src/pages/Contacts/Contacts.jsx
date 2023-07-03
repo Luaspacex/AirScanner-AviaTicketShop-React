@@ -1,9 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-// import $ from 'jquery';
-// import 'https://api-maps.yandex.ru/2.1/?apikey=3dabf29e-7514-4cff-ba24-0732365961f3&lang=ru_RU';
-// import './object_manager_geojson.js';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 import s from "./Contacts.module.scss"
 function Contacts(){
@@ -23,7 +20,7 @@ function Contacts(){
         <div className={s.textBlock}>
         <h2 className={s.mainText}>Company details:</h2>
         <h3 className={s.secondText}>Address: 050000, Republic of Kazakhstan,<br />
-Almaty city, Abay 68 str., 105 office</h3>
+        Almaty city, Abay 68 str., 105 office</h3>
         <h3 className={s.secondText}>Phone: +7 700 123 45 67</h3>
         <h3 className={s.secondText}>Email: airscanner@gmail.com</h3>
         <h3 className={s.secondText}>Location:</h3>

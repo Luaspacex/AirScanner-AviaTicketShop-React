@@ -1,12 +1,4 @@
-// import cityImage1 from "../images/cardImage1.jpg"
-// import cityImage2 from "../images/cardImage2.jpg";
-// import cityImage3 from "../images/cardImage3.jpg";
-// import cityImage4 from "../images/cardImage4.jpg";
-// import cityImage5 from "../images/cardImage5.jpg"
-// import cityImage6 from "../images/cardImage6.jpg"
-// import cityImage7 from "../images/cardImage7.jpg";
-// import cityImage8 from "../images/cardImage8.jpg"
-// import cityImage9 from "../images/cardImage9.jpg"
+
 import osaka from "../images/osaka.png"
 import tokyo from "../images/tokyo.png"
 import fukuoka from "../images/fukuoka.png"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import successImage from "../../images/07.png"
 import s from "./SuccessPage.module.scss";
 

@@ -56,3 +56,77 @@
 //       font-weight: 400;
 //     }
 //   }
+// .inputs{
+//   gap: 10px;
+// }
+.saveBtn{
+  background: #42B8FF;
+border-radius: 10px;
+width: 150px;
+height: 40px;
+display: block;
+// margin: auto;
+align-items: center;
+color: #FFFFFF;
+// margin-right: 50px;
+// margin-bottom: 30px;
+}
+// .label {
+//     font-weight: 500;
+//     font-size: 16px;
+//     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+//     display: flex;
+//     flex-direction: column;
+//     gap: 4px;
+//   }
+.email_address{
+  width: 900px;
+  height: 430px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.input {
+  
+  width: 50%;
+  min-height: 40px;
+  border-radius: 10px;
+  border-color: #d8dadc;
+  // padding-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 125%;
+  border: 1px solid hsla(210, 5%, 85%, 1);
+  transition: 0.3s;
+  // display: block;
+  margin: 0 15px;
+
+  :focus {
+    border-color: hsla(210, 15%, 75%, 1);
+  }
+}
+textarea{
+  margin: 0 auto;
+}
+.logOut{
+  // position: absolute;
+width: 305px;
+height: 40px;
+// left: 115px;
+// top: 944px;
+background: #f00000;
+border-radius: 10px;
+display: block;
+margin: auto;
+margin-bottom: 30px;
+}
+.input textarea{
+  height: 50px;
+}
+
+.twoInputs{
+  display: flex;
+justify-content: center;
+margin: 20px 0;
+}

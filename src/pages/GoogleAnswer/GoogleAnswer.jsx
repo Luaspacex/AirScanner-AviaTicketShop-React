@@ -91,7 +91,7 @@ function GoogleAnswer() {
           </div>
         </div>
         <div className={s.innerDiv}>
-          <p className={s.title}>Top 5 sights</p>
+          <p className={s.title}>Top 9 sights</p>
           <div className={s.gridBlock}>
             <div className={s.sights}>
               <li className={s.sightsName}>

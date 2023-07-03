@@ -4,7 +4,11 @@
       "id": 1,
       "login": "Anime",
       "password": "qwerty",
-      "image": "https://attackofthefanboy.com/wp-content/uploads/2023/02/Mikasa.jpg"
+      "image": "https://attackofthefanboy.com/wp-content/uploads/2023/02/Mikasa.jpg",
+      "formData": {
+        "id": 1,
+        "login": ""
+      }
     },
     {
       "login": "Irvin",
@@ -68,10 +72,55 @@
       "password": "Qwerty123*",
       "contactNo": "7089153318",
       "cart": [
-        "11876-2307120820--32179,-32166-1-14788-2307121350",
-        "9451-2309140635--32132-0-10413-2309140755"
+        {
+          "id": "11876-2307120820--32179,-32166-1-14788-2307121350",
+          "arrival": "2023-07-12 13:50",
+          "departure": "2023-07-12 08:20",
+          "origin": "Seoul",
+          "destination": "Tokyo",
+          "marketingCarrier": "Jeju Air",
+          "price": "$127",
+          "durationInMinutes": "5h 30m",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/78.png"
+        },
+        {
+          "id": "11876-2307120820--32179,-32166-1-14788-2307121350",
+          "arrival": "2023-07-12 13:50",
+          "departure": "2023-07-12 08:20",
+          "origin": "Seoul",
+          "destination": "Tokyo",
+          "marketingCarrier": "Jeju Air",
+          "price": "$127",
+          "durationInMinutes": "5h 30m",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/78.png"
+        },
+        {
+          "id": "11876-2307121740--32558,-31974-1-14788-2307122210",
+          "arrival": "2023-07-12 22:10",
+          "departure": "2023-07-12 17:40",
+          "origin": "Seoul",
+          "destination": "Tokyo",
+          "marketingCarrier": "Asiana Airlines",
+          "price": "$185",
+          "durationInMinutes": "4h 30m",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/OZ.png"
+        },
+        {
+          "id": "11876-2307120700--32128-1-14788-2307121135",
+          "arrival": "2023-07-12 11:35",
+          "departure": "2023-07-12 07:00",
+          "origin": "Seoul",
+          "destination": "Tokyo",
+          "marketingCarrier": "Korean Air",
+          "price": "$262",
+          "durationInMinutes": "4h 35m",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KE.png"
+        }
       ],
-      "id": 12
+      "id": 12,
+      "formData": {
+        "login": "lua@mail.ru"
+      }
     },
     {
       "login": "adore.space@mail.ru",
@@ -98,11 +147,53 @@
       "id": 15
     },
     {
-      "login": "zookorea@inbox.ru",
+      "login": "luna@mail.ru",
       "password": "Almaty1701*",
       "contactNo": "7089153318",
-      "cart": [],
+      "cart": [
+        {
+          "id": "9407-2308250740--32708,-31767-1-9970-2308251735",
+          "arrival": "2023-08-25 17:35",
+          "departure": "2023-08-25 07:40",
+          "origin": "Almaty",
+          "destination": "Bangkok",
+          "marketingCarrier": "Air Astana",
+          "price": "$560",
+          "durationInMinutes": "8h 55m",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/KC.png"
+        },
+        {
+          "id": "9407-2308252035--32761,-30759,-31435-2-9970-2308261325",
+          "arrival": "2023-08-26 13:25",
+          "departure": "2023-08-25 20:35",
+          "origin": "Almaty",
+          "destination": "Bangkok",
+          "marketingCarrier": "Wizz Air Abu Dhabi",
+          "price": "$423",
+          "durationInMinutes": "15h 50m",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/ZA.png"
+        }
+      ],
       "id": 16
+    },
+    {
+      "login": "line.key@mail.ru",
+      "password": "Almaty1701*",
+      "contactNo": "7089153318",
+      "cart": [
+        {
+          "id": "9407-2308200635--31734-0-12585-2308200945",
+          "arrival": "2023-08-20 09:45",
+          "departure": "2023-08-20 06:35",
+          "origin": "Almaty",
+          "destination": "Istanbul",
+          "marketingCarrier": "Turkish Airlines",
+          "price": "Т 140,664",
+          "durationInMinutes": "6h 10m",
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TK.png"
+        }
+      ],
+      "id": 17
     }
   ]
 }

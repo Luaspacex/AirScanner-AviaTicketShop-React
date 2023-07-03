@@ -7,37 +7,7 @@ import s from "./Cards.module.scss";
 
 function Cards() {
   const navigate = useNavigate();
-
   const dispatch = useDispatch();;
-
-  // const [destination, setDestination] = useState("");
-  // const [origin, setOrigin] = useState("");
-  // const [date, setDate] = useState("");
-  // const [currency, setCurrency] = useState("");
-  // const [adults, setAdults] = useState("");
-  // const [response, setResponse] = useState("");
-  // const endpoint = "https://skyscanner44.p.rapidapi.com/search?";
-
-  // const onAdultChange = (event) => {
-  //   setAdults(event.target.value);
-  // };
-  // const onOriginChange = (event) => {
-  //   setOrigin(event.target.value);
-  // };
-  // const onDestinationChange = (event) => {
-  //   setDestination(event.target.value);
-  // };
-  // const onDateChange = (event) => {
-  //   setDate(event.target.value);
-  // };
-  // const onCurrencyChange = (event) => {
-  //   setCurrency(event.target.value);
-  // };
-  // const onResponseChange = (event) => {
-  //   setResponse(event.target.value);
-  // };
-
-
   return (
     <>
       <div className={s.cardsContainer}>

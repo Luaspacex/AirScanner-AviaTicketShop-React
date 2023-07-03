@@ -3,15 +3,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import errorImage from "../../images/error.png"
 import s from "./ErrorPage.module.scss";
 function ErrorPage() {
-        // const handleSomeError = () => {
-        //   // Handle the error
-        //   // For example, using try-catch block
-        //   try {
-        //     // Code that may throw an error
-        //   } catch (error) {
-        //     setHasError(true); // Set the error state to true
-        //   }
-        // };
     return(
         <div className={s.container}>
         <img src={errorImage} alt="error" className={s.errorImage} />
